@@ -1,20 +1,14 @@
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class GameView extends JFrame implements ActionListener{
 
-	
-	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private Coin coin;
 	private JTextField displayRand;
@@ -66,9 +60,6 @@ public class GameView extends JFrame implements ActionListener{
 		JButton btnDime = new JButton("Dime");
 		btnDime.setBounds(403, 61, 117, 29);
 		panel.add(btnDime);
-		
-		ImageIcon quarterImage = new ImageIcon("/Users/JoeSkimmons/Desktop/programs folder/ValueOfMoneyGame/bin/Quarter.jpg");
-		
 		
 		displayRand = new JTextField();
 		displayRand.setBounds(233, 131, 294, 43);
